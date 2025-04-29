@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Market Holidays 2025 - Hello Beginner</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Dark Neon Theme -->
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+    .navbar {
+      background-color: #1e1e1e !important;
+    }
+    .navbar .nav-link {
+      color: #cccccc !important;
+    }
+    .navbar .nav-link.active, .navbar .nav-link:hover {
+      color: #00c3ff !important;
+    }
+    h2, h4 {
+      color: #00c3ff;
+      margin-bottom: 30px;
+    }
+    .holiday-card {
+      background-color: #1f1f1f;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+    .holiday-card:hover {
+      transform: scale(1.02);
+      background-color: #2a2a2a;
+    }
+    .search-input {
+      background-color: #2c2c2c;
+      border: 1px solid #00c3ff;
+      color: #e0e0e0;
+    }
+    .search-input::placeholder {
+      color: #888;
+    }
+    footer {
+      background-color: #1e1e1e;
+      color: #bbbbbb;
+      margin-top: 40px;
+    }
+    /* Calendar Styles */
+    .calendar {
+      background-color: #1f1f1f;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      max-width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .calendar table {
+      width: 100%;
+      color: #e0e0e0;
+    }
+    .calendar th {
+      color: #00c3ff;
+      font-weight: bold;
+      text-align: center;
+    }
+    .calendar td {
+      text-align: center;
+      padding: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .calendar td.holiday {
+      background-color: red;
+      color: #121212;
+      border-radius: 50%;
+    }
+    .calendar td.weekend {
+      background-color: green;
+      color: #121212;
+      border-radius: 50%;
+    }
+    .calendar td:hover {
+      background-color: #00c3ff33;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Hello Beginner</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="learn.html">Learn</a></li>
+        <li class="nav-item"><a class="nav-link" href="roi.html">ROI Calculator</a></li>
+        <li class="nav-item"><a class="nav-link active" href="holidays.html">Holidays</a></li>
+        <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Holidays Section -->
+<section id="holidays" class="py-5 text-center">
+  <div class="container">
+    <h2>Indian Stock Market Holidays 2025</h2>
+
+    <!-- Search Bar -->
+    <input type="text" id="searchInput" class="form-control mb-4 search-input" placeholder="Search by date or holiday name..." onkeyup="filterHolidays()">
+
+    <!-- Holiday List -->
+    <div id="holidayList">
+      <!-- Holidays -->
+      <div class="holiday-card">
+        <h5>26-Feb-2025 (Wednesday) - Mahashivratri</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>14-Mar-2025 (Friday) - Holi</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>31-Mar-2025 (Monday) - Id-Ul-Fitr (Ramadan Eid)</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>10-Apr-2025 (Thursday) - Shri Mahavir Jayanti</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>14-Apr-2025 (Monday) - Dr. Baba Saheb Ambedkar Jayanti</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>18-Apr-2025 (Friday) - Good Friday</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>01-May-2025 (Thursday) - Maharashtra Day</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>15-Aug-2025 (Friday) - Independence Day / Parsi New Year</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>27-Aug-2025 (Wednesday) - Shri Ganesh Chaturthi</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>02-Oct-2025 (Thursday) - Mahatma Gandhi Jayanti / Dussehra</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>21-Oct-2025 (Tuesday) - Diwali Laxmi Pujan (Muhurat Trading Day)</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>22-Oct-2025 (Wednesday) - Balipratipada</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>05-Nov-2025 (Wednesday) - Prakash Gurpurb Sri Guru Nanak Dev</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>25-Dec-2025 (Thursday) - Christmas</h5>
+      </div>
+
+      <!-- Holidays Falling on Weekends -->
+      <hr class="my-4">
+      <h4>Holidays Falling on Saturday / Sunday:</h4>
+
+      <div class="holiday-card">
+        <h5>26-Jan-2025 (Sunday) - Republic Day</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>06-Apr-2025 (Sunday) - Shri Ram Navami</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>07-Jun-2025 (Saturday) - Bakri Id</h5>
+      </div>
+      <div class="holiday-card">
+        <h5>06-Jul-2025 (Sunday) - Muharram</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+  <p>&copy; 2025 Hello Beginner. All rights reserved.</p>
+</footer>
+
+<!-- Bootstrap & JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript for Search and Calendar -->
+<script>
+// Holidays Array (for calendar)
+const holidays = [
+  "2025-02-26", "2025-03-14", "2025-03-31", "2025-04-10", "2025-04-14",
+  "2025-04-18", "2025-05-01", "2025-08-15", "2025-08-27", "2025-10-02",
+  "2025-10-21", "2025-10-22", "2025-11-05", "2025-12-25",
+  "2025-01-26", "2025-04-06", "2025-06-07", "2025-07-06"
+];
+
+// Search Holidays
+function filterHolidays() {
+  const input = document.getElementById('searchInput');
+  const filter = input.value.toLowerCase();
+  const cards = document.getElementById('holidayList').getElementsByClassName('holiday-card');
+
+  for (let i = 0; i < cards.length; i++) {
+    const txtValue = cards[i].textContent || cards[i].innerText;
+    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+}
+
+// Generate Calendar
+function generateCalendar() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = now.getMonth();
+
+  const firstDay = new Date(year, month, 1).getDay();
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+  let table = `<table class="table table-dark"><thead><tr>`;
+  const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  days.forEach(day => table += `<th>${day}</th>`);
+  table += `</tr></thead><tbody><tr>`;
+
+  for (let i = 0; i < firstDay; i++) {
+    table += `<td></td>`;
+  }
+
+  for (let date = 1; date <= daysInMonth; date++) {
+    const fullDate = `${year}-${(month+1).toString().padStart(2, "0")}-${date.toString().padStart(2, "0")}`;
+
+    const isHoliday = holidays.includes(fullDate);
+    const isWeekend = (new Date(fullDate).getDay() === 0 || new Date(fullDate).getDay() === 6);
+
+    let className = isHoliday ? 'holiday' : '';
+    if (isWeekend) className = 'weekend';
+
+    table += `<td class="${className}">${date}</td>`;
+
+    if ((date + firstDay) % 7 === 0) {
+      table += `</tr><tr>`;
+    }
+  }
+
+  table += `</tr></tbody></table>`;
+  document.getElementById('calendarContainer').innerHTML = table;
+}
+
+// Initialize Calendar
+generateCalendar();
+</script>
+
+</body>
+</html>

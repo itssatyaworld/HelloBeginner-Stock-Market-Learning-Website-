@@ -1,0 +1,48 @@
+/* Dark Neon Theme Styles */
+body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .navbar {
+    background-color: #1e1e1e !important;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #00c3ff !important;
+  }
+  
+  .nav-link:hover {
+    color: #ff6384 !important;
+  }
+  
+  .calculator-card, .card, .form-control, .form-select {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #00c3ff;
+  }
+  
+  .form-control::placeholder {
+    color: #aaa;
+  }
+  
+  .btn-success, .btn-primary {
+    background-color: #00c3ff;
+    border: none;
+  }
+  
+  .btn-success:hover, .btn-primary:hover {
+    background-color: #00b7e6;
+  }
+  
+  footer {
+    background-color: #1e1e1e;
+    color: #ccc;
+  }
+  
+  .alert {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #00c3ff;
+  }
+  
